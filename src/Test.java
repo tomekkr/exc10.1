@@ -21,6 +21,6 @@ class Test {
         } catch (NameUndefinedException | IncorrectAgeException e) {
             System.err.println(e.getMessage());
         }
-
+        scanner.close();
     }
 }

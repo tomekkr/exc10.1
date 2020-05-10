@@ -4,7 +4,7 @@ class Person {
     private int age;
     private int pesel;
 
-    public Person(String firstName, String lastName, int age, int pesel) {
+    public Person(String firstName, String lastName, int age, int pesel) throws IncorrectAgeException, NameUndefinedException {
         if (firstName.length() < 2)
             throw new NameUndefinedException("Imię musi składać się przynajmniej z dwóch znaków");
         if (lastName.length() < 2)
